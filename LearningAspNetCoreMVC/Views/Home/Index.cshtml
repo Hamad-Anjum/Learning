@@ -1,0 +1,14 @@
+﻿@model Product
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container text-center" style="border:solid thin lightgray">
+    <h2>@nameof(Model.ProductID) : <small>@Model.ProductID</small> </h2>
+    <h2>@nameof(Model.Name) : <small>@Model.Name</small> </h2>
+    <h2>@nameof(Model.Description) : <small>@Model.Description</small> </h2>
+    <h2>@nameof(Model.Category) : <small>@Model.Category</small> </h2>
+    <h2>@nameof(Model.Price) : <small>@Model.Price.ToString("c")</small> </h2>
+    <h2>Date : <small>@DateTime.Now.ToString("dd MMMM yyyy")</small> </h2>
+</div>
